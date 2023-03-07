@@ -14,7 +14,6 @@ export default class App extends Component {
     }
 
     static renderTable(characters, abilities) {
-        // Test
         return (
             <><table className='table table-striped' aria-labelledby="tabelLabel">
                 <thead>
@@ -65,8 +64,8 @@ export default class App extends Component {
 
         return (
             <div>
-                <h1 id="tabelLabel" >Character List</h1>
-                <p>List of characters saved in the database</p>
+                <h1 id="tabelLabel" >D&D Main Page</h1>
+                <p>List of characters and abilities saved in the database</p>
                 {contents}
             </div>
         );
