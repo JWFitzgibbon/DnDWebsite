@@ -1,2 +1,0 @@
-C:\Users\User\source\repos\DnDApp\DnDWebsite\obj\Debug\DnDWebsite.esproj.SuggestedBindingRedirects.cache
-C:\Users\User\source\repos\DnDApp\DnDWebsite\obj\Debug\DnDWebsite.esproj.CoreCompileInputs.cache
