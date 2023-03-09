@@ -15,7 +15,9 @@ export default class App extends Component {
 
     static renderTable(characters, abilities) {
         return (
-            <><table className='table table-striped' aria-labelledby="tabelLabel">
+            <>
+            <h2>Characters</h2>
+            <table className='table table-striped' aria-labelledby="tabelLabel">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -35,25 +37,26 @@ export default class App extends Component {
                 </tbody>
             </table>
 
-                <table className='table table-striped' aria-labelledby="tabelLabel">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Class</th>
-                            <th>Level</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {abilities && abilities.map(ability => <tr key={ability.id}>
-                            <td>{ability.name}</td>
-                            <td>{ability.description}</td>
-                            <td>{ability.class}</td>
-                            <td>{ability.level}</td>
-                        </tr>
-                        )}
-                    </tbody>
-                </table></>
+            <h2>Abilities</h2>
+            <table className='table table-striped' aria-labelledby="tabelLabel">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Class</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {abilities && abilities.map(ability => <tr key={ability.id}>
+                        <td>{ability.name}</td>
+                        <td>{ability.description}</td>
+                        <td>{ability.class}</td>
+                        <td>{ability.level}</td>
+                    </tr>
+                    )}
+                </tbody>
+            </table></>
         );
     }
 
